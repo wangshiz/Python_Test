@@ -5,7 +5,7 @@
 
 ### DateType(数据类型)
 * Dictionary 字典
-* List 列表
+* [List](https://github.com/wangshiz/Python_Test/blob/master/DataType/List.py) 列表
 * Number 数字
     * int 整数
     * float 浮点数

@@ -20,3 +20,26 @@ print(a and b)      # 0
 print(a or b)       # 20
 print(not(a and b))     # True
 print(not(a or b))      # False
+
+'''
+优先级：
+在 not or and 同时存在的情况下 先算括号内容 再算 not 再算 and 最后再算 or
+'''
+print(not (3 > 1) and True or False and False or (3 > 1 and True))
+# True
+
+
+'''
+and: 如果为true 返回 y 值
+or: 如果为true 返回 x 值
+'''
+print(0 and 1)      # 0
+print(1 and 0)      # 0
+print(1 and 2)      # 2
+print(1 or 0)       # 1
+print(0 or 1)       # 1
+print(0 or 0)       # 0
+print(1 or 3)       # 3
+
+print(2 < 1 and 4 > 6 or 3 and 4 > 5 or 6)      # 6
+

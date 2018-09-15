@@ -32,4 +32,6 @@ while a <= 100:
     if a % 2 == 1:
         print(a)
     a = a + 1
-
+# 这里可以加else
+else:
+    print("a为%d，结束该循环" % a)

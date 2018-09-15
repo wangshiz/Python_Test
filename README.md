@@ -17,6 +17,7 @@
 
 ### FirstPython(Little Python Tests)
 * MyFirstPython 测试python文件能否运行
+* [GuessingNumbers](https://github.com/wangshiz/Python_Test/blob/master/FirstPython/GuessingNumbers.py) 猜数字
 
 ### Operator
 * [ArithmeticOperator](https://github.com/wangshiz/Python_Test/blob/master/Operator/ArithmeticOperator.py) 算术运算符
@@ -31,3 +32,4 @@
 ### PythonGrammar(Python语法)
 * [IFElse](https://github.com/wangshiz/Python_Test/blob/master/PythonGrammar/IfElse.py)
 * [While](https://github.com/wangshiz/Python_Test/blob/master/PythonGrammar/While.py)
+* [FormattedOutput](https://github.com/wangshiz/Python_Test/blob/master/PythonGrammar/FormattedOutput.py) 格式化输出

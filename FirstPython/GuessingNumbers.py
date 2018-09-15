@@ -2,9 +2,9 @@
 import random
 
 guessNum = random.randint(1, 100)
-count = 0
+count = 1
 a = 0
-while True:
+while count <= 7:
     a = input("请输入你要猜的数字")
     count = count + 1
     if int(a) > guessNum:
@@ -16,3 +16,5 @@ while True:
         print("这个数为%s，您共猜了%s" % (a, count))
         break
     continue
+else:
+    print("你真蠢")

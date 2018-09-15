@@ -18,6 +18,7 @@
 ### FirstPython(Little Python Tests)
 * MyFirstPython 测试python文件能否运行
 * [GuessingNumbers](https://github.com/wangshiz/Python_Test/blob/master/FirstPython/GuessingNumbers.py) 猜数字
+* [MonkeysEatPeaches](https://github.com/wangshiz/Python_Test/blob/master/FirstPython/MonkeysEatPeaches.py) 猴子吃桃子
 
 ### Operator
 * [ArithmeticOperator](https://github.com/wangshiz/Python_Test/blob/master/Operator/ArithmeticOperator.py) 算术运算符

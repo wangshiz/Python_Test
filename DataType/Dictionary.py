@@ -30,6 +30,11 @@ print(dit2)     # {2: 4, 4: 16, 6: 36}
 dit3 = dict(Runoob=1, Google=2, Taobao=3)
 print(dit3)     # {'Runoob': 1, 'Google': 2, 'Taobao': 3}
 
+
+dit.setdefault(1, 21)
+dit.setdefault(1, 22)   # 无效 因为这个字典里包含了key为1的值
+dit[0] = 23     # 赋值
+print(dit)
 """
 另外，字典类型也有一些内置的函数，例如clear()、keys()、values()等。
 注意：

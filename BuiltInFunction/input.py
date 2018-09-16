@@ -18,3 +18,13 @@ if int(age2) < 18:
     print("不能饮酒")
 else:
     print("可以")
+
+'''
+输入一串数，模拟加法计算
+'''
+sum = 0
+num = input("请输入一串数")
+numlist = num.split("+")
+for i in numlist:
+    sum += int(i)
+print(sum)

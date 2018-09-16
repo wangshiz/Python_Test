@@ -47,6 +47,67 @@ a[2:5] = []     # 删值
 print(a)    # [9 ,2]
 a[2:100] = [321, 546, 3366, 3332]
 print(a)    # [9, 2, 321, 546, 3366, 3332]
+print(a[1:5:2])
+
+
+lists = [1, 2, 3, 4, 5, 6, 7, 8]
+list2 = [1, 2]
+# 列表长度
+print(len(lists))
+# 返回列表最大值
+print(max(lists))
+# 返回列表最小值
+print(min(lists))
+# list(seq) 元组转列表
+# 在列表末尾添加新的对象
+lists.append({123, 345})
+print(lists)
+# 统计某个元素在列表出现次数
+print(lists.count({123, 345}))
+# 在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）
+lists.extend(list2)
+print(lists)
+# 从列表中找出某个值第一个匹配项的索引位置
+print(lists.index(1))
+# 将对象插入列表
+lists.insert(1, 20)
+print(lists)
+# 移除列表中的一个元素（默认最后一个元素），并且返回该元素的值
+print(lists.pop(2))
+# 移除列表中某个值的第一个匹配项
+lists.remove(20)
+# 反向列表中元素
+lists.reverse()
+print(lists)
+# 对原列表进行排序
+lists.remove({123, 345})
+lists.sort()
+print(lists)
+lists.sort(reverse=True)    # 倒序
+# 复制list
+list3 = lists.copy()
+
+print(list3)
+# 清除list
+lists.clear()
+lists.extend("abc")     # 迭代添加
+# 清除list2 下标为0的值
+del list2[0]
+# 也可以这样写:   del list2   整个清除
+print(lists)
+print("list2是", list2)
+
+# 列表的嵌套
+list3.append([1, 2, 3])
+print(list3)
+print(list3[9][2])
+
+arr = ['abc', 'def', 'ghi']
+strs = ""
+for i in arr:
+    strs += (i + "_")
+print(strs[:len(strs)-1])
+print(strs[:-1])
 
 '''
 List内置了有很多方法，例如append()、pop()等等，这在后面会讲到。
@@ -56,3 +117,5 @@ List内置了有很多方法，例如append()、pop()等等，这在后面会讲
 3、List可以使用+操作符进行拼接。
 4、List中的元素是可以改变的。
 '''
+
+

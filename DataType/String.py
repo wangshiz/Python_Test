@@ -120,6 +120,7 @@ print(s.index("of", 0, 20))
 拓展，了解
 '''
 snum = "1233"
+# snum = "" 这种情况一下函数只会返回false
 # 判断字符串是否由数字组成，不包含小数点
 print(snum.isdigit())
 # 判断字符串是否由字母组成
@@ -130,6 +131,8 @@ print(snum.isalnum())
 print(snum.isnumeric())
 # 判断字符串是否只包含十进制字符串，定义一个十进制字符串，只需要在字符串最前面定义一个u
 print(snum.isdecimal())
+
+
 
 # 计算字符长度
 print(len(snum))

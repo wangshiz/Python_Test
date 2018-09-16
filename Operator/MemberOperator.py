@@ -33,3 +33,10 @@ else:
 不存在
 不存在
 """
+
+a = input("输入一个字符串")
+if "第一" in a or "国家级" in a or "最" in a:
+    print("error")
+else:
+    print(a)
+

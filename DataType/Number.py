@@ -96,12 +96,23 @@ print(7.0//2)   # 3.0
 print(3*3.75/1.5)   # 7.5
 print(7.0/2)        # 3.5
 
+'''
+bit_length() 计算int的二进制长度
+'''
+a = 2
+print(a.bit_length())   # 2
 
+v = 1
+print(bool(v))  # True
 
+s = ""
+print(bool(s))  # False
 
+s = "a"
+print(bool(s))  # True
 
-
-
+n = None
+print(bool(n))  # False
 
 
 

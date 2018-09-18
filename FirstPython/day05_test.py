@@ -19,10 +19,7 @@ for i in li:
         for c in range(num):
             s += "*"
         a = a.replace(i, s)
-        li2.append(a)
-    else:
-        li2.append(a)
-print(li2)
+print(a)
 
 # 3 循环打印
 li = [1, 3, 4, "alex", [3, 7, 8, "TaiBai"], 5, "RiTiAn"]
@@ -39,5 +36,32 @@ for i in li:
         print(i)
 
 
-# 4
+# 4 成绩录入
+li = []
+lis = []
+sum = 0
+while True:
+    a = input("输入学生成绩：")
+    if a.lower() != 'q':
+        li = a.split("_")
+        lis.append(li)
+    else:
+        break
+if lis.__len__() != 0:
+    for i in lis:
+        sum += int(i[1])
+    else:
+        count = sum/len(lis)
+        print("这个班级的平均数为{}".format(count))
 
+
+# 5 敲桌子
+a = input("输入一个数：")
+li = []
+for i in range(int(a)):
+    i = i + 1
+    if '7' in str(i) or i % 7 == 0:
+        li.append("敲")
+    else:
+        li.append(i)
+print(li)

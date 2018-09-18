@@ -35,6 +35,31 @@ dit.setdefault(1, 21)
 dit.setdefault(1, 22)   # 无效 因为这个字典里包含了key为1的值
 dit[0] = 23     # 赋值
 print(dit)
+
+dic = {"abc": "你去哪里了", "xiaoxue": "傻子哦", "尻": "ss", "wosan": "怒会"}
+print(dic)
+# 删除
+# ret = dic.pop("xiaoxue")    # 返回key的value值
+# del dic["abc"]
+# 随机删
+rets = dic.popitem()    # 返回元组
+# print(ret)
+print(rets)
+print(dic)
+
+# 对值进行操作
+dic = {"id": 1, "name": "li", "money": 10000}
+dic['money'] = dic['money'] - 500
+print(dic)
+
+dic1 = {1: 2, 2: 3, 3: 4}
+dic2 = {"wo": "shi", 2: "diodio"}
+dic1.update(dic2)   # 把dic2的内容更新到dic1中, 如果存在key 替换  不存在 添加
+print(dic1)
+print(dic2)
+
+dic = {"及时雨": "宋江", "小李广":"花荣", "黑旋风": "李逵"}
+
 """
 另外，字典类型也有一些内置的函数，例如clear()、keys()、values()等。
 注意：

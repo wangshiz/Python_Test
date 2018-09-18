@@ -65,3 +65,4 @@ for i in range(int(a)):
     else:
         li.append(i)
 print(li)
+

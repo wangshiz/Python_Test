@@ -133,7 +133,6 @@ print(snum.isnumeric())
 print(snum.isdecimal())
 
 
-
 # 计算字符长度
 print(len(snum))
 print(snum.__len__())

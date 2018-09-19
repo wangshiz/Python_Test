@@ -18,8 +18,26 @@ print(dit)      # {0: 20}
 
 tinydict = {'name': 'runoob', 'code':1, 'site': 'www.runoob.com'}
 print(tinydict)             # {'name': 'runoob', 'code': 1, 'site': 'www.runoob.com'}
-print(tinydict.keys())      # dict_keys(['name', 'code', 'site'])
-print(tinydict.values())    # dict_values(['runoob', 1, 'www.runoob.com'])
+print(tinydict.keys())      # 拿到所有的key值 dict_keys(['name', 'code', 'site'])
+print(tinydict.values())    # 拿到所有的value值 dict_values(['runoob', 1, 'www.runoob.com'])
+print(tinydict.items())     # 拿到所有的键值对
+
+for item in tinydict.items():
+    print(item[0])  # 获得key
+    print(item[1])  # 获得value
+    print(item)     # 获得元组
+
+# 解构
+a, b = 1, 2
+print(a)
+print(b)
+
+# 所以上面的可以这样写
+
+for k, v in tinydict.items():
+    # k, v = item
+    print(k, v)
+
 '''
 构造函数 dict() 可以直接从键值对序列中构建字典如下：
 '''
@@ -33,6 +51,8 @@ print(dit3)     # {'Runoob': 1, 'Google': 2, 'Taobao': 3}
 
 dit.setdefault(1, 21)
 dit.setdefault(1, 22)   # 无效 因为这个字典里包含了key为1的值
+print(dit.setdefault(1))    # 21
+
 dit[0] = 23     # 赋值
 print(dit)
 
@@ -58,7 +78,31 @@ dic1.update(dic2)   # 把dic2的内容更新到dic1中, 如果存在key 替换  
 print(dic1)
 print(dic2)
 
-dic = {"及时雨": "宋江", "小李广":"花荣", "黑旋风": "李逵"}
+
+dic = {"及时雨": "宋江", "小李广": "花荣", "黑旋风": "李逵", "易大师": "剑圣"}
+# dic["大宝剑"] = "盖伦"   # 新增
+# dic["及时雨"] = "天老爷"  # 修改
+print(dic["易大师"])   # 查询 如果没有这个key会报错
+print(dic.get("易大师"))   # 查询 如果没有这个key不会报错返回None
+print(dic.get("123", 233))    # 如果没有这个key，取233这个默认值
+
+# 字典的嵌套
+dic = {
+    "name": "汪峰",
+    "age": 58,
+    "wife": {
+        "name": "国际章",
+        "salary": 18000,
+        "age": 37
+    },
+    "children": [
+        {"name": "老大", "age": 18},
+        {"name": "老二", "age": 14}
+    ]
+}
+
+print(dic["children"][1]["age"])
+print(dic["wife"]["salary"])
 
 """
 另外，字典类型也有一些内置的函数，例如clear()、keys()、values()等。

@@ -16,9 +16,10 @@ dit = dict()
 dit[0] = 20
 print(dit)      # {0: 20}
 
-tinydict = {'name': 'runoob', 'code':1, 'site': 'www.runoob.com'}
+tinydict = {'name': 'runoob', 'code': 1, 'site': 'www.runoob.com'}
 print(tinydict)             # {'name': 'runoob', 'code': 1, 'site': 'www.runoob.com'}
-print(tinydict.keys())      # 拿到所有的key值 dict_keys(['name', 'code', 'site'])
+print(1, tinydict.keys())      # 拿到所有的key值 dict_keys(['name', 'code', 'site'])
+print(type(tinydict.keys()))    # <class 'dict_keys'>
 print(tinydict.values())    # 拿到所有的value值 dict_values(['runoob', 1, 'www.runoob.com'])
 print(tinydict.items())     # 拿到所有的键值对
 

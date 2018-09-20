@@ -112,3 +112,7 @@ print(dic["wife"]["salary"])
 2、字典的关键字必须为不可变类型，且不能重复。
 3、创建空字典使用 { }。
 """
+tinydict = {1: 'runoob', 2: 1, 3: 'www.runoob.com'}
+
+print(tinydict.keys())
+print("1" in tinydict.keys())

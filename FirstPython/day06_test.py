@@ -106,11 +106,33 @@ while True:
             print("进入删除环节")
             while True:
                 a3 = input("请输入你要删除的序号")
-                if a3.isdigit() or bodies.keys():
-                    pass
+                if a3.isdigit() or int(a3) in bodies.keys():
+                    deleteValue = bodies.pop(int(a3))
+                    a = input("序号{}:{}已删除，是否需要继续删除：（是：y/否：其他任意值）".format(int(a3), deleteValue))
+                    if a.lower() == 'y':
+                        continue
+                    else:
+                        break
                 else:
+                    print("您的输入有误，请继续输入！")
                     continue
 
+        # 修改
+        if int(a) == 4:
+            print("进入修改环节")
+            while True:
+                a4 = input("请输入你要修改的序号")
+                if a4.isdigit() or int(a4) in bodies.keys():
+                    print("该用户的信息为：", dicss[int(a4)])
+                    re = input("请输入要修改的值：")
+                    a = input("序号{}:{}已删除，是否需要继续删除：（是：y/否：其他任意值）".format(int(a3), deleteValue))
+                    if a.lower() == 'y':
+                        continue
+                    else:
+                        break
+                else:
+                    print("您的输入有误，请继续输入！")
+                    continue
 
 
 

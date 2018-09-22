@@ -113,6 +113,50 @@ print(dic["wife"]["salary"])
 3、创建空字典使用 { }。
 """
 tinydict = {1: 'runoob', 2: 1, 3: 'www.runoob.com'}
-
 print(tinydict.keys())
 print("1" in tinydict.keys())
+
+# 字典for循环遍历打印出来的是key值
+for k, v in tinydict.items():
+    print(k, v)
+
+dic = {
+    1: {2: 2, 3: 3, 4: 4},
+    2: {5: 5, 6: 6, 7: 7}
+}
+
+for el, item in dic.items():
+    print(el, item)
+
+dic2 = {2: 2, 3: 3, 4: 4}
+print(dic2[2])
+
+
+
+
+
+# coding: utf-8
+import types
+
+
+# 获取字典中的objkey对应的值，适用于字典嵌套
+# dict:字典
+# objkey:目标key
+# default:找不到时返回的默认值
+def dict_get(dict, objkey, default):
+    tmp = dict
+    for k, v in tmp.items():
+        if k == objkey:
+            return v
+        else:
+            if type(v) is types.DictType:
+                ret = dict_get(v, objkey, default)
+                if ret is not default:
+                    return ret
+    return default
+
+
+# 如
+dicttest = {"result": {"code": "110002", "msg": "设备设备序列号或验证码错误"}}
+ret = dict_get(dicttest, 'msg', None)
+print(ret)

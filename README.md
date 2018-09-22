@@ -2,6 +2,7 @@
 
 ### BuiltInFunction(内置函数)
 * [input()](https://github.com/wangshiz/Python_Test/blob/master/BuiltInFunction/input.py) 接受输入端输入数据
+* [join()](https://github.com/wangshiz/Python_Test/blob/master/BuiltInFunction/join.py) 字符串插入
 
 ### DateType(数据类型)
 * [Dictionary](https://github.com/wangshiz/Python_Test/blob/master/DataType/Dictionary.py) 字典
@@ -20,6 +21,7 @@
 * [GuessingNumbers](https://github.com/wangshiz/Python_Test/blob/master/FirstPython/GuessingNumbers.py) 猜数字
 * [MonkeysEatPeaches](https://github.com/wangshiz/Python_Test/blob/master/FirstPython/MonkeysEatPeaches.py) 猴子吃桃子
 * [JudgeIntegerCount](https://github.com/wangshiz/Python_Test/blob/master/FirstPython/JudgeIntegerCount.py) 判断整数个数
+* [InputMessages](https://github.com/wangshiz/Python_Test/blob/master/FirstPython/InputMessages.py) 字典录入
 
 ### Operator
 * [ArithmeticOperator](https://github.com/wangshiz/Python_Test/blob/master/Operator/ArithmeticOperator.py) 算术运算符
@@ -30,8 +32,10 @@
 * [LogicalOperator](https://github.com/wangshiz/Python_Test/blob/master/Operator/LogicalOperator.py) 逻辑运算符
 * [MemberOperator](https://github.com/wangshiz/Python_Test/blob/master/Operator/MemberOperator.py) 成员运算符
 * [OperatorPriority](https://github.com/wangshiz/Python_Test/blob/master/Operator/OperatorPriority.py) 运算符优先级
+* [CodeAndDecode](https://github.com/wangshiz/Python_Test/blob/master/Operator/CodeAndDecode.py) 编码与解码
 
 ### PythonGrammar(Python语法)
 * [IFElse](https://github.com/wangshiz/Python_Test/blob/master/PythonGrammar/IfElse.py)
 * [While](https://github.com/wangshiz/Python_Test/blob/master/PythonGrammar/While.py)
+* [For](https://github.com/wangshiz/Python_Test/blob/master/PythonGrammar/For.py)
 * [FormattedOutput](https://github.com/wangshiz/Python_Test/blob/master/PythonGrammar/FormattedOutput.py) 格式化输出

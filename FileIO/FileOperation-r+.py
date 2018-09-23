@@ -21,7 +21,7 @@ r+模式，默认情况下光标在文件的开头，必须先读，后写
 # f.close()
 
 
-f = open("txt/flash", mode="r+", encoding="utf-8")
+f = open("text/flash", mode="r+", encoding="utf-8")
 s = f.read(3)   #读取三个字
 f.seek(3)   # 移动到3字节这个位置
 f.seek(0)   # 移动到开头

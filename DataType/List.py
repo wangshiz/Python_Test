@@ -109,6 +109,19 @@ for i in arr:
 print(strs[:len(strs)-1])
 print(strs[:-1])
 
+
+# 删除列表元素
+dic_list = []
+list = [1, 2, 3, 4]
+for i in list:
+    dic_list.append(i)
+
+for i in dic_list:
+    list.remove(i)
+
+print(list)
+
+
 '''
 List内置了有很多方法，例如append()、pop()等等，这在后面会讲到。
 注意：

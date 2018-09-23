@@ -6,6 +6,7 @@
 param = {value01,value02,...}
 或者
 set(value)
+set集合里的元素值必须是不可hash的
 """
 student = {'Tom', 'Jim', 'Mary', 'Tom', 'Jack', 'Rose'}
 print(student)      # 自动去掉重复数据
@@ -19,6 +20,7 @@ else:
 # Rose 在集合中
 
 # set可以进行集合运算
+# set = set()  声明一个空集合
 a = set('abracadabra')
 b = set('alacazam')
 
@@ -31,5 +33,13 @@ print(a | b)    # a和b的并集    {'c', 'l', 'z', 'r', 'a', 'm', 'd', 'b'}
 print(a & b)    # a和b的交集    {'a', 'c'}
 
 print(a ^ b)    # a和b中不同时存在的元素  {'d', 'r', 'l', 'm', 'z', 'b'}
+
+
+# 保存set 的值
+list = [1, 2, 3]
+set = set("abcde")
+print(set)
+s = frozenset(set)
+print(s)
 
 

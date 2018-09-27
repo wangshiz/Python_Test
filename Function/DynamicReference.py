@@ -48,3 +48,14 @@ def fun3(a, b):
 fun3(*(1, 2))
 
 fun3(**{"a": 2, "b": 2})
+
+
+def fun4(*food):
+    print(food)
+
+
+a = (1, 2, 3, 4, 5)
+
+fun4(*a)
+
+

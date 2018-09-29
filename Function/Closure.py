@@ -16,3 +16,18 @@ def fun1():
 ret = fun1()
 ret()   # 执行的是fun2()
 
+
+from urllib.request import urlopen
+
+
+def fun():
+    content = str(urlopen("http://webtest.qinqinhealth.com/shopxx/").read(), "utf-8")
+
+    def inner():
+        return content
+    return inner
+
+
+fn = fun()
+content = fn()
+print(content)

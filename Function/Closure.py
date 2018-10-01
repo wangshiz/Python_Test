@@ -25,6 +25,7 @@ def fun():
 
     def inner():
         return content
+    print(inner.__closure__)    # 查看是不是闭包 None不是闭包 其他为闭包
     return inner
 
 

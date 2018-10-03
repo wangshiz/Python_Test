@@ -34,12 +34,40 @@ print(isinstance(b8, str))  # True
 
 
 a9 = 7
-b8 = eval('3 * a9')     # 用来计算在字符串中的有效Python表达式,并返回一个对象
+b8 = eval('3 * a9')     # 用来简单计算在字符串中的有效Python表达式,并返回一个对象
 print(b8)   # 21
+
+a20 = "for i in range(10):print(i)"
+b20 = exec(a20) # 0 1 2 3 4 5 6 7 8 9
+print(b20)  # 用来相对复杂计算在字符串中的有效Python表达式,但不返回一个对象
+
+
+a21 = """
+def func():
+    print("老王")
+func()
+"""
+b21 = exec(a21)
+print(b21)
+
+a22 = "1+1"
+b22 = compile(a22, "", mode="eval")
+c22 = eval(b22)
+print(c22)  # 2
+
+a23 = "for i in range(3):print(i)"
+b23 = compile(a23, "", mode="exec")
+exec(b23)
+
+# a24 = "asd=input('输入');print(asd)"
+# b24 = compile(a24, "", mode="single")   # input用single
+# exec(b24)
+# print(b24)
 
 a10 = 23
 b10 = tuple(str(a10))   # 将序列 s 转换为一个元组
 print(b10)       # (2, 3)
+
 
 a11 = 'string'
 b11 = list(a11)     # 将序列 s 转换为一个元组
@@ -75,3 +103,32 @@ print(b18)  # 0o20
 a19 = 17
 b19 = bin(a19)  # 将一个整数转换为一个二进制字符串
 print(b19)  # 0b10001
+
+# 绝对值
+print(abs(-123))     # 123
+
+# 五舍六入
+print(round(1.49))   # 1
+
+# 求商 余数
+print(divmod(20, 3))    # 6, 2
+
+# 求次幂
+print(pow(10, 2))   # 10^2 = 100
+
+# 求次幂的余数
+print(pow(10, 2, 3))    # 10^2%3 = 1
+
+# 求和
+print(sum([1, 2]))  # 3
+
+# min()最小值
+# max()最大值
+
+
+# ascii
+
+
+# fun
+for i in range(65536):
+    print(chr(i), end=" ")

@@ -112,14 +112,30 @@ print(strs[:-1])
 
 # 删除列表元素
 dic_list = []
-list = [1, 2, 3, 4]
-for i in list:
+list1 = [1, 2, 3, 4]
+for i in list1:
     dic_list.append(i)
 
 for i in dic_list:
-    list.remove(i)
+    list1.remove(i)
 
-print(list)
+print(list1)
+
+
+lst = [1, 3, 5]
+it = reversed(lst)  # 将列表倒序排列  并变成一个迭代器
+print(list(it))
+
+
+lst = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+s = slice(1, 3, 1)  # 切片函数
+print(lst[s])
+
+
+
+
+
+
 
 
 '''

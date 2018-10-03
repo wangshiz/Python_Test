@@ -1,5 +1,6 @@
 """
 字典推导式
+dic = {结果(key: value) fro 变量 in 可迭代对象 if 条件}
 """
 
 dic = {"a": "b", "c": "d"}

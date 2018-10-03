@@ -141,3 +141,17 @@ print(snum.__len__())
 # 遍历
 for i in snum:
     print(i)
+
+
+# 原样输出
+s = "abc"+ "\nss%sp" % "dd"
+print(s)    # abc
+            # ssddp
+print(repr(s))  # 'abc\nssddp'
+
+
+# 判断字符是否在ascii码里
+s = ascii("a")
+print(s)    # 'a'
+s = ascii("中")
+print(s)    # '\u4e2d'

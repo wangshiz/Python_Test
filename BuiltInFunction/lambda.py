@@ -17,4 +17,3 @@ b = lambda x, y: x*y
 print(b(3, 6))  # 18
 
 
-

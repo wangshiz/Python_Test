@@ -3,6 +3,12 @@
 ### BuiltInFunction(内置函数)
 * [input()](https://github.com/wangshiz/Python_Test/blob/master/BuiltInFunction/input.py) 接受输入端输入数据
 * [join()](https://github.com/wangshiz/Python_Test/blob/master/BuiltInFunction/join.py) 字符串插入
+* [filter](https://github.com/wangshiz/Python_Test/blob/master/BuiltInFunction/filter.py) 筛选函数
+* [function](https://github.com/wangshiz/Python_Test/blob/master/BuiltInFunction/function.py) 内置函数
+* [lambda](https://github.com/wangshiz/Python_Test/blob/master/BuiltInFunction/lambda.py) 匿名函数 
+* [map](https://github.com/wangshiz/Python_Test/blob/master/BuiltInFunction/map.py) 映射函数
+* [sorted](https://github.com/wangshiz/Python_Test/blob/master/BuiltInFunction/sorted.py) 排序函数
+
 
 ### Comprehensions(推导式)
 * [List](https://github.com/wangshiz/Python_Test/blob/master/Comprehensions/List.py) 列表推导式

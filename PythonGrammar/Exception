@@ -1,0 +1,19 @@
+"""
+try
+"""
+
+try:
+    print("ss")
+    printss(1)
+except Exception as a:
+    print(a)
+    print("hello")
+
+
+'''
+try:
+
+except Exception as er:
+
+
+'''

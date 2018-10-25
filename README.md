@@ -50,6 +50,7 @@
 * [DataCollection](https://github.com/wangshiz/Python_Test/blob/master/FirstPython/DataCollection.py) 数据汇总
 * [MyFirstReptilian](https://github.com/wangshiz/Python_Test/blob/master/FirstPython/MyFirstReptilian.py) 第一个爬虫
 * [Recursion](https://github.com/wangshiz/Python_Test/blob/master/FirstPython/Recursion.py) 递归
+* [FibonacciSequence](https://github.com/wangshiz/Python_Test/blob/master/FirstPython/FibonacciSequence.py) 斐波那契数列
 
 ### Function
 * MyFirstFunction 我的第一个函数

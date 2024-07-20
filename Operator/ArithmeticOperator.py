@@ -15,30 +15,30 @@ b = 10
 c = 0
 
 c = a + b
-print("1 - c 的值为：", c)
+print("1.", "c 的加值为：", c)
 
 c = a - b
-print("2 - c 的值为：", c)
+print("2.", "c 的减值为：", c)
 
 c = a * b
-print("3 - c 的值为：", c)
+print("3.", "c 的乘值为：", c)
 
 c = a / b
-print("4 - c 的值为：", c)
+print("4.", "c 的除值为：", c)
 
 c = a % b
-print("5 - c 的值为：", c)
+print("5.", "c 的余值为：", c)
 
 # 修改变量 a 、b 、c
 a = 2
 b = 3
 c = a ** b
-print("6 - c 的值为：", c)
+print("6.", "c 的幂值值为：", c)
 
 a = 10
-b = 5
+b = 3
 c = a // b
-print("7 - c 的值为：", c)
+print("7.", "c 的整除值为：", c)
 
 """
 1 - c 的值为： 31

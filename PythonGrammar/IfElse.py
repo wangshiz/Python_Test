@@ -10,3 +10,13 @@ elif gender == '女':
 else:
     print("打死都不放进来")
 
+a = 50
+b = 10
+if int(input("input")) == a:
+    print(a)
+elif int(input("input")) == a:
+    print(a)
+elif int(input("input")) == a:
+    print(a)
+else:
+    print("error")

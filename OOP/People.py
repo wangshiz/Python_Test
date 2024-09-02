@@ -13,8 +13,8 @@ class People:
         self.age = age
         self.sex = sex
 
-    def whatToDo(self):
-        print(self)
+    def whatToDo(self, a):
+        print(self, a)
 
 """
 # 查询
@@ -33,18 +33,18 @@ print(People.__dict__)
 People.whatToDo(111)
 
 """
+if __name__ == '__main__':
+    a = People(1, 2, 3)
+    print(a.__dict__)
+    a.weight = 50
 
-a = People(1, 2, 3)
-print(a.__dict__)
-a.weight = 50
+    print(a.weight)
 
-print(a.weight)
-
-print(People.__dict__)
-People.name = 'ss'
-print(People.name)
-del a.weight
-print(a.name)
-print(People.__dict__)
-print(a.__dict__)
+    print(People.__dict__)
+    People.name = 'ss'
+    print(People.name)
+    del a.weight
+    print(a.name)
+    print(People.__dict__)
+    print(a.__dict__)
 

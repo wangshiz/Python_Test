@@ -6,8 +6,9 @@ Python3 支持 int、float、bool、complex（复数）。
 像大多数语言一样，数值类型的赋值和计算都是很直观的。
 内置的 type() 函数可以用来查询变量所指的对象类型。
 """
+from pprint import pformat
 
-a, b, c, d = 1, 1.0, True, 4+3j
+a, b, c, d = 1, 1.0, True, 4 + 3j
 print(type(a), type(b), type(c), type(d))
 # <class 'int'> <class 'float'> <class 'bool'> <class 'complex'>
 
@@ -16,9 +17,9 @@ print(type(a), type(b), type(c), type(d))
 '''
 
 a = 1
-print("a的值为"+str(a))
-print("a是否为int类型："+str(isinstance(a, int)))
-print("a是否为float类型："+str(isinstance(a, float)))
+print("a的值为" + str(a))
+print("a是否为int类型：" + str(isinstance(a, int)))
+print("a是否为float类型：" + str(isinstance(a, float)))
 # 1
 # a是否为int类型：True
 # a是否为float类型：False
@@ -27,26 +28,20 @@ print("a是否为float类型："+str(isinstance(a, float)))
 '''
 isinstance 和 type 的区别!important
 '''
-
-
 class FatherA:
     pass
 # pass 啥都不做
 
-
 # 继承写法：B继承
 class ChildB(FatherA):
     pass
-
-
-result1 = isinstance(FatherA(), FatherA)
-result2 = type(FatherA()) == FatherA
-print(result1, result2)   # True True
+result1 = isinstance(FatherA(), FatherA)  # 判断 obj 是否是 Class 或其子类的实例 会考虑继承关系
+result2 = type(FatherA()) == FatherA # 判断 obj 直接属于 Class 不考虑继承
+print(result1, result2)  # True True
 
 result3 = isinstance(ChildB(), FatherA)
 result4 = type(ChildB()) == FatherA
-print(result3, result4)   # True False
-
+print(result3, result4)  # True False
 
 '''
 type()不会认为子类是一种父类类型。
@@ -69,38 +64,37 @@ del var1
 # print(var1)  # NameError: name 'var1' is not defined
 print(var2)  # 2
 
-
 # del var1[,var2[,var3[....,varN]]]
 
 
 '''
 数值运算
 '''
-print(5+4)      # 加法 result = 9
-print(4.3-2)    # 减法 result = 2.3
-print(3*7)      # 乘法 result = 21
-print(2/4)      # 除法，得到一个浮点数 result = 0.5
-print(2//4)     # 除法，得到一个整数 result = 0
-print(17%3)     # 取余 result = 2
-print(2**5)     # 乘方 result = 32
-
+print(5 + 4)  # 加法 result = 9
+print(4.3 - 2)  # 减法 result = 2.3
+print(3 * 7)  # 乘法 result = 21
+print(2 / 4)  # 除法，得到一个浮点数 result = 0.5
+print(2 // 4)  # 除法，得到一个整数 result = 0
+print(17 % 3)  # 取余 result = 2
+print(2 ** 5)  # 乘方 result = 32
+print(3 / 2) # 除法 result = 1.5
 '''
 这里//得到的并不一定是整数类型的数，它与分母分子的数据类型有关系。
 '''
-print(7//2)     # 3
-print(7.0//2)   # 3.0
+print(7 // 2)  # 3
+print(7.0 // 2)  # 3.0
 
 '''
 不同类型的数混合运算时会将整数转换为浮点数：
 '''
-print(3*3.75/1.5)   # 7.5
-print(7.0/2)        # 3.5
+print(3 * 3.75 / 1.5)  # 7.5
+print(7.0 / 2)  # 3.5
 
 '''
 bit_length() 计算int的二进制长度
 '''
 a = 2
-print(a.bit_length())   # 2
+print(a.bit_length())  # 2
 
 v = 1
 print(bool(v))  # True
@@ -114,12 +108,20 @@ print(bool(s))  # True
 n = None
 print(bool(n))  # False
 
+num = 0.2 + 0.1
+print(num) # 0.30000000000000004
+print(type(num)) # <class 'float'>
+abc = round(num, 2)
+print(abc) # 0.3
+print(type(abc)) # <class 'float'>
 
 
-
-
-
-
+x = 0.1
+s = 0
+for _ in range(10):
+    s += x
+print(s)            # 0.9999999999999999
+print(round(s, 2))  # 1.0 round四舍五入
 
 
 

@@ -35,8 +35,26 @@ print("我用%d这个数去加%d这个数，最后得到%d这个数" % (num1, nu
 print("我用{}这个数去加{}这个数，最后得到{}这个数".format(num1, num2, num3))
 # 我用10这个数去加20这个数，最后得到30这个数
 
-print("我用{2}这个数去加{1}这个数，最后得到{0}这个数".format(num1, num2, num3))
+print("我用{2}这个数去减{1}这个数，最后得到{0}这个数".format(num1, num2, num3))
 # 我用30这个数去减20这个数，最后得到10这个数
 
 print("我用{num1}这个数去加{num2}这个数，最后得到{num3}这个数".format(num1=num1, num2=num2, num3=num3))
 # 我用10这个数去加20这个数，最后得到30这个数
+
+# python3的写法
+print(f"我用{num1}这个数去加{num2}这个数，最后得到{num3}这个数")
+# print(f"我用{num1}这个数去加{num2}这个数，最后得到{num3}这个数".format(num1=num3, num2=num1, num3=num2)) # 虽然不会报错，但是format函数是失效的
+# 我用10这个数去加20这个数，最后得到30这个数
+
+x = 3.14159
+print(f"{x:.2f}")  # 输出: 3.14
+print (f"{2*3}")    # 输出: 6
+
+
+print("{} once said, “{}”".format("Albert Einstein", "A person who never made a mistake never tried anything new."))
+print("{s1} once said, “{s2}”".format(s1="Albert Einstein", s2="A person who never made a mistake never tried anything new."))
+
+s1 = 'Albert Einstein'
+s2 = 'A person who never made a mistake never tried anything new.'
+print(f"{s1} once said, “{s2}”")
+
